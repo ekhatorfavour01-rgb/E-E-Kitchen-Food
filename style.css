@@ -1,0 +1,319 @@
+:root {
+  --gold: #D4AF37; /* Royal Gold */
+  --black: #0A0A0A; /* Deep Black */
+  --emerald: #046A38; /* Emerald Green */
+  --dark-gray: #1a1a1a;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(10, 10, 10, 0.9);
+  border-bottom: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+.logo h1 {
+  color: var(--gold);
+  font-size: 28px;
+}
+.logo span {
+  color: var(--emerald);
+}
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: var(--gold);
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(4,106,56,0.5)), url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=2070') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 55px;
+  color: var(--gold);
+  animation: fadeUp 1s ease-out;
+}
+.hero-content p {
+  font-size: 20px;
+  margin: 20px 0;
+  max-width: 600px;
+  animation: fadeUp 1.2s ease-out;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: var(--gold);
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: fadeUp 1.4s ease-out;
+}
+.hero-btn:hover {
+  background: var(--emerald);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ================= SEARCH ================= */
+.search-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.search-section h2 {
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+#searchInput {
+  width: 90%;
+  max-width: 600px;
+  padding: 14px;
+  border-radius: 30px;
+  border: 2px solid var(--gold);
+  background: var(--dark-gray);
+  color: var(--white);
+  font-size: 16px;
+  outline: none;
+}
+#searchInput:focus {
+  box-shadow: 0 0 15px var(--gold);
+}
+
+/* ================= SECTIONS ================= */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: var(--gold);
+  margin-bottom: 30px;
+}
+section {
+  padding: 60px 20px;
+}
+
+/* ================= FEATURED ================= */
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+.featured-card {
+  background: var(--dark-gray);
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid var(--emerald);
+  transition: 0.3s;
+  animation: fadeUp 0.6s ease-out;
+}
+.featured-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+.featured-card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+/* ================= MENU ================= */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+.food-card {
+  background: var(--dark-gray);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--emerald);
+  transition: 0.3s;
+  animation: fadeUp 0.6s ease-out;
+}
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+  border-color: var(--gold);
+}
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.food-info {
+  padding: 15px;
+}
+.food-info h3 {
+  color: var(--gold);
+}
+.food-info p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.price-tag {
+  color: var(--emerald);
+  font-weight: bold;
+}
+
+/* ================= BUTTONS ================= */
+.btn-whatsapp {
+  background: var(--emerald);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.btn-whatsapp:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+.cart-section {
+  text-align: center;
+  padding: 30px;
+}
+#orderAllBtn {
+  padding: 16px 35px;
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  transition: 0.3s;
+}
+#orderAllBtn:hover {
+  background: var(--emerald);
+  color: white;
+}
+
+/* ================= ABOUT / SERVICES / REVIEWS / CONTACT ================= */
+.about-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.services-grid div {
+  background: var(--dark-gray);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--emerald);
+}
+.review-card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: var(--dark-gray);
+  padding: 20px;
+  border-left: 5px solid var(--gold);
+  border-radius: 10px;
+}
+.contact-box {
+  text-align: center;
+  font-size: 18px;
+}
+.contact-box i {
+  color: var(--emerald);
+  margin-right: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark-gray);
+  border-top: 1px solid var(--gold);
+  color: #aaa;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+#floatingWhatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  background: var(--emerald);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(4, 106, 56, 0.6);
+  z-index: 1000;
+  transition: 0.3s;
+}
+#floatingWhatsapp:hover {
+  background: var(--gold);
+  transform: scale(1.1);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:900px){
+ .header{ flex-direction:column; gap:20px; padding:20px; }
+ .navbar{ flex-wrap:wrap; justify-content:center; }
+ .hero h1{ font-size:40px; }
+}
+@media(max-width:600px){
+ .hero h1{ font-size:32px; }
+  #orderAllBtn{ width:90%; }
+  #floatingWhatsapp{ width:58px; height:58px; font-size:30px; }
+}
