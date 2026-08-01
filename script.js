@@ -150,8 +150,8 @@ function showMenu(itemsToShow = menuCategories){
 // 9. FUNCTION: SEARCH FOOD - FILTERS MENU
 function searchFood(){
   const query = document.getElementById('searchInput').value.toLowerCase(); // <-- TARGETS YOUR <input id="searchInput">
-  const filtered = menuCategories.map(cat => {
-    return {category: cat.category, items: cat.items.filter(food => food.name.toLowerCase().includes(query))}
-  }).filter(cat => cat.items.length > 0);
+  const filtered = menuCategories.map(category => {
+    return {category: category.category, items: category.items.filter(food => food.name.toLowerCase().includes(query))}
+  }).filter(category => category.items.length > 0);
   showMenu(filtered); // REBUILD MENU WITH FILTERED RESULTS
 }
