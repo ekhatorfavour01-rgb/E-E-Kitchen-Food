@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&E Kitchen and Food</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>E&E Kitchen <span>& Food</span></h1>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+        <nav class="navbar">
+
+            <a href="#home">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Delicious Nigerian Meals
+            </h1>
+
+            <p>
+                Freshly prepared with love. Perfect for homes,
+                birthdays, weddings, office lunches and every special occasion.
+            </p>
+
+            <a href="#menu" class="hero-btn">
+                View Our Menu
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <h2>Find Your Favourite Meal</h2>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Egusi, Amala, Jollof Rice..."
+        onkeyup="searchFood()">
+
+    </section>
+
+    <!-- ================= FEATURED ================= -->
+
+    <section id="featured">
+
+        <h2 class="section-title">
+            ⭐ Featured Dishes
+        </h2>
+
+        <div class="featured-container">
+
+            <div class="featured-card">
+
+                <h3>Egusi Soup</h3>
+
+                <p>
+                    Rich melon seed soup served with any swallow.
+                </p>
+
+            </div>
+
+            <div class="featured-card">
+
+                <h3>Amala</h3>
+
+                <p>
+                    Soft and delicious with any soup of your choice.
+                </p>
+
+            </div>
+
+            <div class="featured-card">
+
+                <h3>Jollof Rice</h3>
+
+                <p>
+                    Smoky Nigerian party jollof rice.
+                </p>
+
+            </div>
+
+            <div class="featured-card">
+
+                <h3>Pepper Soup</h3>
+
+                <p>
+                    Hot, spicy and freshly prepared.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MENU ================= -->
+
+    <section id="menu">
+
+        <h2 class="section-title">
+            Our Menu
+        </h2>
+
+        <div id="menuList" class="menu-grid">
+
+            <!-- JavaScript will display menu here -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section">
+
+        <button id="orderAllBtn">
+
+            🛒 Order All on WhatsApp (0)
+
+        </button>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Us
+        </h2>
+
+        <p class="about-text">
+
+            At E&E Kitchen and Food, we prepare delicious Nigerian
+            meals using fresh ingredients and authentic recipes.
+
+            We also cater for birthdays, weddings,
+            naming ceremonies, office lunches,
+            family gatherings and other special events.
+
+        </p>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services">
+
+        <h2 class="section-title">
+
+            Catering Services
+
+        </h2>
+
+        <div class="services-grid">
+
+            <div>🎉 Birthday Parties</div>
+
+            <div>💍 Weddings</div>
+
+            <div>👶 Naming Ceremonies</div>
+
+            <div>🏢 Office Lunches</div>
+
+            <div>🏡 Home Delivery</div>
+
+            <div>🍽 Outdoor Events</div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section id="reviews">
+
+        <h2 class="section-title">
+
+            Customer Reviews
+
+        </h2>
+
+        <div class="review-card">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+
+                The food tasted amazing and was delivered fresh.
+
+            </p>
+
+            <strong>
+
+                — Happy Customer
+
+            </strong>
+
+        </div>
+
+        <div class="review-card">
+
+            ⭐⭐⭐⭐⭐
+
+            <p>
+
+                Best Nigerian meals I've ordered online.
+
+            </p>
+
+            <strong>
+
+                — Happy Customer
+
+            </strong>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+
+            Contact Us
+
+        </h2>
+
+        <div class="contact-box">
+
+            <p>
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                WhatsApp Orders
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Russia
+
+            </p>
+
+            <p>
+
+                Delivery Available
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 E&E Kitchen and Food.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- Floating WhatsApp -->
+
+    <a
+    href="#"
+    id="floatingWhatsapp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
