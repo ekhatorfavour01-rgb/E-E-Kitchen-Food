@@ -307,6 +307,7 @@ footer {
 }
 
 /* ================= MOBILE ================= */
+<<<<<<< HEAD
 .menu-toggle {
   display: none;
   background: none;
@@ -334,6 +335,13 @@ footer {
 }
 
 
+=======
+@media(max-width:900px){
+ .header{ flex-direction:column; gap:20px; padding:20px; }
+ .navbar{ flex-wrap:wrap; justify-content:center; }
+ .hero h1{ font-size:40px; }
+}
+>>>>>>> 1ac9cf8e94ee18a8b8beb1d424e9aa5f8cf3e897
 @media(max-width:600px){
  .hero h1{ font-size:32px; }
   #orderAllBtn{ width:90%; }

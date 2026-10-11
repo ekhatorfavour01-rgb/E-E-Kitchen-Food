@@ -154,6 +154,7 @@ function searchFood(){
     return {category: category.category, items: category.items.filter(food => food.name.toLowerCase().includes(query))}
   }).filter(category => category.items.length > 0);
   showMenu(filtered); // REBUILD MENU WITH FILTERED RESULTS
+<<<<<<< HEAD
 }
 
 const menuToggle = document.querySelector('.menu-toggle');
@@ -162,3 +163,6 @@ const navbar = document.querySelector('.navbar');
 menuToggle.addEventListener('click', function(){
   navbar.classList.toggle('active');
 });
+=======
+}
+>>>>>>> 1ac9cf8e94ee18a8b8beb1d424e9aa5f8cf3e897
